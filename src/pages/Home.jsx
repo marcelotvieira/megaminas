@@ -5,7 +5,6 @@ import ContactForm from '../components/ContactForm';
 import ProductPresentation from '../components/ProductPresentation';
 import ProvidersPresentaiton from '../components/ProvidersPresentaiton';
 import ImageSlider from '../components/ImageSlider';
-import Products from './Products';
 
 export default class Home extends Component {
   render() {
@@ -17,7 +16,6 @@ export default class Home extends Component {
         <div className="home-page">
           <div className="page-container">
             <ProvidersPresentaiton />
-            <Products />
             <ProductPresentation />
             <AboutComponent />
             <ContactForm />

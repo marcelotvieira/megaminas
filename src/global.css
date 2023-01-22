@@ -143,24 +143,44 @@ header .register-btn {
   font-size: 14px;
 }
 
-.contact-page .page-container, .home-page .page-container, .about-page .page-container, .providers-page .page-container, .products-page .page-container, .not-found .page-container, .register-page .page-container {
+.send-confirmation-page {
+  padding: 3rem;
+  height: 80.7vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.send-confirmation-page h2 {
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: #151C7E;
+  text-align: center;
+}
+.send-confirmation-page p {
+  color: #151C7E;
+  text-align: center;
+  margin: 1rem 0;
+  font-size: 1.2rem;
+}
+
+.contact-page .page-container, .home-page .page-container, .about-page .page-container, .providers-page .page-container, .products-page .page-container, .not-found .page-container, .register-page .page-container, .send-confirmation-page .page-container {
   margin-top: 0rem;
   padding: 3rem;
   background-color: white;
 }
-.contact-page .page-container .product-presentation h2, .home-page .page-container .product-presentation h2, .about-page .page-container .product-presentation h2, .providers-page .page-container .product-presentation h2, .products-page .page-container .product-presentation h2, .not-found .page-container .product-presentation h2, .register-page .page-container .product-presentation h2 {
+.contact-page .page-container .product-presentation h2, .home-page .page-container .product-presentation h2, .about-page .page-container .product-presentation h2, .providers-page .page-container .product-presentation h2, .products-page .page-container .product-presentation h2, .not-found .page-container .product-presentation h2, .register-page .page-container .product-presentation h2, .send-confirmation-page .page-container .product-presentation h2 {
   font-size: 1.2rem;
   font-weight: 600;
   color: #151C7E;
 }
-.contact-page .page-container .product-presentation p, .home-page .page-container .product-presentation p, .about-page .page-container .product-presentation p, .providers-page .page-container .product-presentation p, .products-page .page-container .product-presentation p, .not-found .page-container .product-presentation p, .register-page .page-container .product-presentation p {
+.contact-page .page-container .product-presentation p, .home-page .page-container .product-presentation p, .about-page .page-container .product-presentation p, .providers-page .page-container .product-presentation p, .products-page .page-container .product-presentation p, .not-found .page-container .product-presentation p, .register-page .page-container .product-presentation p, .send-confirmation-page .page-container .product-presentation p {
   padding: 0.3rem 0;
   margin: 1rem 0;
   font-size: 12px;
   border-top: 4px dotted #151C7E;
   color: rgb(190, 36, 31);
 }
-.contact-page .page-container .product-presentation .boxes-container, .home-page .page-container .product-presentation .boxes-container, .about-page .page-container .product-presentation .boxes-container, .providers-page .page-container .product-presentation .boxes-container, .products-page .page-container .product-presentation .boxes-container, .not-found .page-container .product-presentation .boxes-container, .register-page .page-container .product-presentation .boxes-container {
+.contact-page .page-container .product-presentation .boxes-container, .home-page .page-container .product-presentation .boxes-container, .about-page .page-container .product-presentation .boxes-container, .providers-page .page-container .product-presentation .boxes-container, .products-page .page-container .product-presentation .boxes-container, .not-found .page-container .product-presentation .boxes-container, .register-page .page-container .product-presentation .boxes-container, .send-confirmation-page .page-container .product-presentation .boxes-container {
   display: flex;
   overflow: hidden;
   overflow-x: scroll;
@@ -168,16 +188,16 @@ header .register-btn {
   border-radius: 1rem;
   padding: 2rem;
 }
-.contact-page .page-container .product-presentation .boxes-container::-webkit-scrollbar, .home-page .page-container .product-presentation .boxes-container::-webkit-scrollbar, .about-page .page-container .product-presentation .boxes-container::-webkit-scrollbar, .providers-page .page-container .product-presentation .boxes-container::-webkit-scrollbar, .products-page .page-container .product-presentation .boxes-container::-webkit-scrollbar, .not-found .page-container .product-presentation .boxes-container::-webkit-scrollbar, .register-page .page-container .product-presentation .boxes-container::-webkit-scrollbar {
+.contact-page .page-container .product-presentation .boxes-container::-webkit-scrollbar, .home-page .page-container .product-presentation .boxes-container::-webkit-scrollbar, .about-page .page-container .product-presentation .boxes-container::-webkit-scrollbar, .providers-page .page-container .product-presentation .boxes-container::-webkit-scrollbar, .products-page .page-container .product-presentation .boxes-container::-webkit-scrollbar, .not-found .page-container .product-presentation .boxes-container::-webkit-scrollbar, .register-page .page-container .product-presentation .boxes-container::-webkit-scrollbar, .send-confirmation-page .page-container .product-presentation .boxes-container::-webkit-scrollbar {
   background-color: transparent;
   height: 8px;
 }
-.contact-page .page-container .product-presentation .boxes-container::-webkit-scrollbar-thumb, .home-page .page-container .product-presentation .boxes-container::-webkit-scrollbar-thumb, .about-page .page-container .product-presentation .boxes-container::-webkit-scrollbar-thumb, .providers-page .page-container .product-presentation .boxes-container::-webkit-scrollbar-thumb, .products-page .page-container .product-presentation .boxes-container::-webkit-scrollbar-thumb, .not-found .page-container .product-presentation .boxes-container::-webkit-scrollbar-thumb, .register-page .page-container .product-presentation .boxes-container::-webkit-scrollbar-thumb {
+.contact-page .page-container .product-presentation .boxes-container::-webkit-scrollbar-thumb, .home-page .page-container .product-presentation .boxes-container::-webkit-scrollbar-thumb, .about-page .page-container .product-presentation .boxes-container::-webkit-scrollbar-thumb, .providers-page .page-container .product-presentation .boxes-container::-webkit-scrollbar-thumb, .products-page .page-container .product-presentation .boxes-container::-webkit-scrollbar-thumb, .not-found .page-container .product-presentation .boxes-container::-webkit-scrollbar-thumb, .register-page .page-container .product-presentation .boxes-container::-webkit-scrollbar-thumb, .send-confirmation-page .page-container .product-presentation .boxes-container::-webkit-scrollbar-thumb {
   border-radius: 4px;
   background-color: rgb(209, 49, 49);
 }
-.contact-page .page-container .product-presentation .box, .home-page .page-container .product-presentation .box, .about-page .page-container .product-presentation .box, .providers-page .page-container .product-presentation .box, .products-page .page-container .product-presentation .box, .not-found .page-container .product-presentation .box, .register-page .page-container .product-presentation .box {
-  min-width: 90%;
+.contact-page .page-container .product-presentation .box, .home-page .page-container .product-presentation .box, .about-page .page-container .product-presentation .box, .providers-page .page-container .product-presentation .box, .products-page .page-container .product-presentation .box, .not-found .page-container .product-presentation .box, .register-page .page-container .product-presentation .box, .send-confirmation-page .page-container .product-presentation .box {
+  min-width: 1000px;
   margin: 2rem 5%;
   padding: 0rem 0;
   background-color: rgb(249, 251, 255);
@@ -185,31 +205,32 @@ header .register-btn {
   border-radius: 8px;
   align-items: center;
 }
-.contact-page .page-container .product-presentation .box .product, .home-page .page-container .product-presentation .box .product, .about-page .page-container .product-presentation .box .product, .providers-page .page-container .product-presentation .box .product, .products-page .page-container .product-presentation .box .product, .not-found .page-container .product-presentation .box .product, .register-page .page-container .product-presentation .box .product {
-  width: 9rem;
-  height: 9rem;
+.contact-page .page-container .product-presentation .box .product, .home-page .page-container .product-presentation .box .product, .about-page .page-container .product-presentation .box .product, .providers-page .page-container .product-presentation .box .product, .products-page .page-container .product-presentation .box .product, .not-found .page-container .product-presentation .box .product, .register-page .page-container .product-presentation .box .product, .send-confirmation-page .page-container .product-presentation .box .product {
+  width: 7rem;
+  height: 7rem;
   margin: 0 auto;
 }
-.contact-page .page-container .product-presentation .box .box-left, .home-page .page-container .product-presentation .box .box-left, .about-page .page-container .product-presentation .box .box-left, .providers-page .page-container .product-presentation .box .box-left, .products-page .page-container .product-presentation .box .box-left, .not-found .page-container .product-presentation .box .box-left, .register-page .page-container .product-presentation .box .box-left {
+.contact-page .page-container .product-presentation .box .box-left, .home-page .page-container .product-presentation .box .box-left, .about-page .page-container .product-presentation .box .box-left, .providers-page .page-container .product-presentation .box .box-left, .products-page .page-container .product-presentation .box .box-left, .not-found .page-container .product-presentation .box .box-left, .register-page .page-container .product-presentation .box .box-left, .send-confirmation-page .page-container .product-presentation .box .box-left {
   display: flex;
   padding: 1rem;
   flex-basis: 30%;
 }
-.contact-page .page-container .product-presentation .box .box-left .provider, .home-page .page-container .product-presentation .box .box-left .provider, .about-page .page-container .product-presentation .box .box-left .provider, .providers-page .page-container .product-presentation .box .box-left .provider, .products-page .page-container .product-presentation .box .box-left .provider, .not-found .page-container .product-presentation .box .box-left .provider, .register-page .page-container .product-presentation .box .box-left .provider {
+.contact-page .page-container .product-presentation .box .box-left .provider, .home-page .page-container .product-presentation .box .box-left .provider, .about-page .page-container .product-presentation .box .box-left .provider, .providers-page .page-container .product-presentation .box .box-left .provider, .products-page .page-container .product-presentation .box .box-left .provider, .not-found .page-container .product-presentation .box .box-left .provider, .register-page .page-container .product-presentation .box .box-left .provider, .send-confirmation-page .page-container .product-presentation .box .box-left .provider {
   margin: auto;
   width: 20rem;
   border-radius: 4px;
 }
-.contact-page .page-container .product-presentation .box .box-right, .home-page .page-container .product-presentation .box .box-right, .about-page .page-container .product-presentation .box .box-right, .providers-page .page-container .product-presentation .box .box-right, .products-page .page-container .product-presentation .box .box-right, .not-found .page-container .product-presentation .box .box-right, .register-page .page-container .product-presentation .box .box-right {
+.contact-page .page-container .product-presentation .box .box-right, .home-page .page-container .product-presentation .box .box-right, .about-page .page-container .product-presentation .box .box-right, .providers-page .page-container .product-presentation .box .box-right, .products-page .page-container .product-presentation .box .box-right, .not-found .page-container .product-presentation .box .box-right, .register-page .page-container .product-presentation .box .box-right, .send-confirmation-page .page-container .product-presentation .box .box-right {
   border-radius: 1rem;
   box-shadow: 0px 0px 2px rgba(0, 0, 0, 0.3);
   margin: 2rem;
   background-color: white;
   padding: 1rem 2rem;
   display: flex;
-  justify-content: end;
+  justify-content: flex-start;
+  align-items: center;
   flex-wrap: wrap;
-  gap: 2rem;
+  gap: 0rem;
   flex-basis: 70%;
 }
 
@@ -254,7 +275,7 @@ header .register-btn {
   margin-left: 1rem;
   margin-right: 1rem;
   box-shadow: 2px 2px 2px 2px rgba(14, 45, 112, 0.25);
-  filter: drop-shadow(1rem 2rem 3px rgba(0, 0, 0, 0.12));
+  filter: drop-shadow(1rem 2rem 3px rgba(0, 0, 0, 0.07));
   cursor: pointer;
 }
 .slider-card p {

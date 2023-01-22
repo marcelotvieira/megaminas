@@ -154,7 +154,27 @@ header {
     }
 }
 
-.contact-page, .home-page, .about-page, .providers-page, .products-page, .not-found, .register-page{
+.send-confirmation-page {
+    padding: 3rem;
+    height: 80.7vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    h2 {
+        font-size: 1.5rem;
+        font-weight: 600;
+        color: #151C7E;
+        text-align: center;
+    }
+    p {
+        color: #151C7E;
+        text-align: center;
+        margin: 1rem 0;
+        font-size: 1.2rem;
+    }
+}
+
+.contact-page, .home-page, .about-page, .providers-page, .products-page, .not-found, .register-page, .send-confirmation-page{
     .page-container {
         margin-top: 0rem;
         padding: 3rem;
@@ -189,7 +209,7 @@ header {
                 }
             }
             .box {
-                min-width: 90%;
+                min-width: 1000px;
                 margin: 2rem 5%;
                 padding: 0rem 0;
                 background-color: rgb(249, 251, 255);
@@ -197,8 +217,8 @@ header {
                 border-radius: 8px;
                 align-items: center;
                 .product {
-                    width: 9rem;
-                    height: 9rem;
+                    width: 7rem;
+                    height: 7rem;
                     margin: 0 auto;
                 }
                 .box-left {
@@ -218,9 +238,10 @@ header {
                     background-color: white;
                     padding: 1rem 2rem;
                     display: flex;
-                    justify-content: end;
+                    justify-content: flex-start;
+                    align-items: center;
                     flex-wrap: wrap;
-                    gap: 2rem;
+                    gap: 0rem;
                     flex-basis: 70%;
                 }
             }
@@ -275,7 +296,7 @@ header {
     margin-left: 1rem;
     margin-right: 1rem;
     box-shadow: 2px 2px 2px 2px rgba(14, 45, 112, 0.25);
-    filter: drop-shadow(1rem 2rem 3px rgba(0, 0, 0, 0.12));
+    filter: drop-shadow(1rem 2rem 3px rgba(0, 0, 0, 0.07));
     cursor: pointer;
     p {
         font-weight: 700;

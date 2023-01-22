@@ -8,6 +8,7 @@ import About from './pages/About';
 import Products from './pages/Products';
 import Providers from './pages/Providers';
 import NotFound from './pages/NotFound';
+import sendConfirmation from './pages/sendConfirmation';
 import Register from './pages/Register';
 import './global.css';
 
@@ -23,6 +24,7 @@ export default class App extends Component {
           <Route exact path="/providers" component={Providers} />
           <Route exact path="/contact" component={Register} />
           <Route exact path="/register" component={Register} />
+          <Route exact path="/sendConfirmation" component={sendConfirmation} />
           <Route path="*" component={NotFound} />
         </Switch>
         <Footer />

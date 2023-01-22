@@ -9,7 +9,7 @@ export default class Header extends Component {
     const pages = [
       { text: 'Início', path: '/' },
       { text: 'Quem somos', path: '/about' },
-      { text: 'Produtos', path: '/products' },
+      // { text: 'Produtos', path: '/products' },
       { text: 'Fornecedores', path: '/providers' },
       { text: 'Contato', path: '/contact' },
     ];
@@ -23,8 +23,8 @@ export default class Header extends Component {
           </div>
           <div className="socials">
             <a target="_blank" href="https://wa.me/553121277500" rel="noreferrer"><i className="fa-brands fa-whatsapp fa-lg" /></a>
-            <a target="_blank" href="https://www.instagram.com/megaminasdistribuidora/" rel="noreferrer"><i className="fa-brands fa-facebook fa-lg" /></a>
-            <a target="_blank" href="https://www.facebook.com/megaminasdistribuidora/" rel="noreferrer"><i className="fa-brands fa-instagram fa-lg" /></a>
+            <a target="_blank" href="https://www.facebook.com/megaminasdistribuidora/" rel="noreferrer"><i className="fa-brands fa-facebook fa-lg" /></a>
+            <a target="_blank" href="https://www.instagram.com/megaminasdistribuidora/" rel="noreferrer"><i className="fa-brands fa-instagram fa-lg" /></a>
           </div>
           <div className="header-top">
             <ul className="menu">

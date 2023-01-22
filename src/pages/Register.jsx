@@ -1,7 +1,10 @@
+/* eslint-disable class-methods-use-this */
 /* eslint-disable react/no-unused-state */
 /* eslint-disable react/state-in-constructor */
 /* eslint-disable react/prefer-stateless-function */
 import React, { Component } from 'react';
+import emailJs from '@emailjs/browser';
+import { Redirect } from 'react-router-dom';
 
 export default class Register extends Component {
   state = {
@@ -12,20 +15,40 @@ export default class Register extends Component {
     telefone1: '',
     telefone2: '',
     isButtonDisabled: true,
+    redirect: false,
   };
 
   componentDidUpdate() {
     this.validateForm();
   }
 
+  sendMail = (e) => {
+    e.preventDefault();
+
+    const {
+      nome, cnpj, razao, email, telefone1, telefone2,
+    } = this.state;
+
+    const params = {
+      from_name: nome,
+      email,
+      razao,
+      cnpj,
+      telefone1,
+      telefone2,
+    };
+
+    emailJs.send('service_ljjc0is', 'template_k0c4ht5', params, 'PAJZB_IVyy-UrfuwX');
+
+    return this.setState({ redirect: '/sendConfirmation' });
+  };
+
   validateForm = () => {
-    console.log('rodou');
     const {
       nome, cnpj, razao, email, telefone1, isButtonDisabled,
     } = this.state;
     const inputsToValidate = [nome, cnpj, razao, email, telefone1];
     const isNotValid = inputsToValidate.some((input) => input === '');
-    console.log(isNotValid);
     if (isButtonDisabled !== isNotValid) return this.setState({ isButtonDisabled: isNotValid });
     return null;
   };
@@ -36,14 +59,21 @@ export default class Register extends Component {
 
   render() {
     const {
-      razao, nome, cnpj, email, telefone1, telefone2, isButtonDisabled,
+      razao, nome, cnpj, email, telefone1, telefone2, isButtonDisabled, redirect,
     } = this.state;
+
+    if (redirect) return <Redirect to={redirect} />;
     return (
       <div className="register-page">
         <div className="page-container">
           <h2>Solicitação de Cadastro:</h2>
           <p>As informações somente serão usadas para contato ao cliente.</p>
-          <form action="" className="register-form">
+
+          <form
+            onSubmit={this.sendMail}
+            action=""
+            className="register-form"
+          >
             <h3>Preencha suas informações e nós faremos contato.</h3>
             <label htmlFor="nome" aria-labelledby="nome">
               Nome:
@@ -118,7 +148,7 @@ export default class Register extends Component {
                 />
               </label>
             </div>
-            <button className="register-submit" type="button" disabled={isButtonDisabled}>Enviar</button>
+            <button className="register-submit" type="submit" disabled={isButtonDisabled}>Enviar</button>
 
           </form>
         </div>
