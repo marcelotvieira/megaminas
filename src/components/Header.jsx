@@ -11,7 +11,6 @@ export default class Header extends Component {
       { text: 'Quem somos', path: '/about' },
       // { text: 'Produtos', path: '/products' },
       { text: 'Fornecedores', path: '/providers' },
-      { text: 'Contato', path: '/contact' },
     ];
 
     const logo = require('../images/logo.webp');

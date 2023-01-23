@@ -6,12 +6,13 @@
 import React from 'react';
 
 const images = [
-  'https://static.wixstatic.com/media/017da7_662725bc94a64ff4bc02c3cefc1c82a8~mv2.png/v1/fill/w_420,h_352,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/danone.png',
-  'https://www.brf-global.com/wp-content/themes/brf-global/assets/images/nova-identidade/pack-de-produtos.png',
-  'https://static.wixstatic.com/media/242cab_f73105dd7e924eac9f7bc5810cb423fc~mv2.png/v1/fill/w_570,h_416,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/A%C3%87A%C3%8D%20PRODUTOS.png',
-  'https://www.argamassapenedo.com.br/images/2021/02/27/produtos.png',
-  'https://i2.wp.com/www.premierealimentos.com.br/wp-content/uploads/2020/10/MIX-DE-PRODUTOS.png?fit=1712%2C1214',
+  require('./teste.jpeg'),
+  require('./imagem1.jpeg'),
+  require('./imagem1.jpeg'),
+  require('./imagem1.jpeg'),
+  require('./imagem1.jpeg'),
 ];
+
 const delay = 2500;
 
 export default function Slideshow() {

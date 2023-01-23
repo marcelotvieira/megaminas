@@ -79,12 +79,11 @@ header .register-btn {
   background-size: cover;
   background-repeat: no-repeat;
   margin-top: 5rem;
-  min-height: 50vh;
   /* Buttons */
 }
 .presentation .slideshow {
   margin: 0 auto;
-  max-width: 800px;
+  max-width: 100%;
 }
 .presentation .slideshowSlider {
   white-space: nowrap;
@@ -97,7 +96,7 @@ header .register-btn {
 }
 .presentation .slide img {
   filter: drop-shadow(1rem 2rem 0.5rem rgba(0, 0, 0, 0.2));
-  width: 60%;
+  width: 100%;
   margin: auto;
   display: flex;
 }

@@ -38,7 +38,7 @@ export default class Register extends Component {
       telefone2,
     };
 
-    emailJs.send('service_ljjc0is', 'template_k0c4ht5', params, 'PAJZB_IVyy-UrfuwX');
+    emailJs.send('service_5qq34ji', 'template_yjejp6w', params, 'eXLilsIvqQUe9kiGU');
 
     return this.setState({ redirect: '/sendConfirmation' });
   };
