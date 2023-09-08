@@ -11,7 +11,7 @@ export default class Footer extends Component {
             <img src={logo} alt="" />
           </div>
           <h3 htmlFor="phone" aria-labelledby="phone">
-            Televendas
+            Contato
             <ul>
               <li>
                 <i className="fa-solid fa-phone" />

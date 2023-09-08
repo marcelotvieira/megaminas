@@ -2,8 +2,8 @@
 /* eslint-disable react/no-unused-state */
 /* eslint-disable react/state-in-constructor */
 /* eslint-disable react/prefer-stateless-function */
-import React, { Component } from 'react';
 import emailJs from '@emailjs/browser';
+import React, { Component } from 'react';
 import { Redirect } from 'react-router-dom';
 
 export default class Register extends Component {
@@ -102,8 +102,11 @@ export default class Register extends Component {
               <label htmlFor="cnpj" aria-labelledby="cnpj">
                 CNPJ:
                 <input
-                  placeholder="xx.xxx.xxx/0001-xx"
+                  maxLength={14}
+                  max={14}
+                  placeholder="Somente números..."
                   type="text"
+                  step={false}
                   name="cnpj"
                   id="cnpj"
                   value={cnpj}
@@ -128,8 +131,9 @@ export default class Register extends Component {
               <label htmlFor="telefone1" aria-labelledby="telefone1">
                 Telefone 1:
                 <input
-                  placeholder="(xx) xxxxx-xxxx"
+                  placeholder="xxx xxxxx-xxxx"
                   type="text"
+                  maxLength={12}
                   name="telefone1"
                   id="telefone1"
                   value={telefone1}
@@ -139,8 +143,9 @@ export default class Register extends Component {
               <label htmlFor="telefone2" aria-labelledby="telefone2">
                 *Telefone 2:
                 <input
-                  placeholder="(xx) xxxx-xxxx"
+                  placeholder="xxx xxxx-xxxx"
                   type="text"
+                  maxLength={11}
                   name="telefone2"
                   id="telefone2"
                   value={telefone2}

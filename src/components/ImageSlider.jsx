@@ -6,11 +6,9 @@
 import React from 'react';
 
 const images = [
-  require('./teste.jpeg'),
-  require('./imagem1.jpeg'),
-  require('./imagem1.jpeg'),
-  require('./imagem1.jpeg'),
-  require('./imagem1.jpeg'),
+  require('../images/presentationImages/presentation1.jpeg'),
+  require('../images/presentationImages/presentation2.jpeg'),
+
 ];
 
 const delay = 2500;
