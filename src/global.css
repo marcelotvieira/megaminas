@@ -4,7 +4,10 @@
   box-sizing: border-box;
 }
 
-body, input, button, textarea {
+body,
+input,
+button,
+textarea {
   font-family: "Nunito Sans", sans-serif;
 }
 
@@ -43,6 +46,9 @@ header .header-top {
   color: #151C7E;
   align-items: center;
 }
+header .header-top .menu-drawer {
+  display: none;
+}
 header .header-top .menu {
   display: flex;
   list-style: none;
@@ -75,7 +81,7 @@ header .register-btn {
 
 .presentation {
   overflow-x: hidden;
-  background: linear-gradient(rgba(19, 28, 59, 0.3), rgba(238, 242, 255, 0.8)), url("./images/header.jpg");
+  background-color: white;
   background-size: cover;
   background-repeat: no-repeat;
   margin-top: 5rem;
@@ -90,12 +96,13 @@ header .register-btn {
   transition: ease 1000ms;
 }
 .presentation .slide {
+  height: 100%;
   display: inline-block;
   width: 100%;
   border-radius: 40px;
 }
 .presentation .slide img {
-  filter: drop-shadow(1rem 2rem 0.5rem rgba(0, 0, 0, 0.2));
+  filter: drop-shadow(1rem 2rem 0.5rem rgba(0, 0, 0, 0.05));
   width: 100%;
   margin: auto;
   display: flex;
@@ -131,11 +138,11 @@ header .register-btn {
   font-weight: 600;
   color: #151C7E;
   text-align: center;
-  margin-top: 3rem;
+  margin-top: 2rem !important;
 }
 .about-conponent p {
   text-align: left;
-  margin: 3rem auto;
+  margin: 1.5rem auto;
   max-width: 800px;
   line-height: 1.5;
   color: rgb(46, 34, 34);
@@ -162,24 +169,52 @@ header .register-btn {
   font-size: 1.2rem;
 }
 
-.contact-page .page-container, .home-page .page-container, .about-page .page-container, .providers-page .page-container, .products-page .page-container, .not-found .page-container, .register-page .page-container, .send-confirmation-page .page-container {
+.contact-page .page-container,
+.home-page .page-container,
+.about-page .page-container,
+.providers-page .page-container,
+.products-page .page-container,
+.not-found .page-container,
+.register-page .page-container,
+.send-confirmation-page .page-container {
   margin-top: 0rem;
   padding: 3rem;
   background-color: white;
 }
-.contact-page .page-container .product-presentation h2, .home-page .page-container .product-presentation h2, .about-page .page-container .product-presentation h2, .providers-page .page-container .product-presentation h2, .products-page .page-container .product-presentation h2, .not-found .page-container .product-presentation h2, .register-page .page-container .product-presentation h2, .send-confirmation-page .page-container .product-presentation h2 {
+.contact-page .page-container .product-presentation h2,
+.home-page .page-container .product-presentation h2,
+.about-page .page-container .product-presentation h2,
+.providers-page .page-container .product-presentation h2,
+.products-page .page-container .product-presentation h2,
+.not-found .page-container .product-presentation h2,
+.register-page .page-container .product-presentation h2,
+.send-confirmation-page .page-container .product-presentation h2 {
   font-size: 1.2rem;
   font-weight: 600;
   color: #151C7E;
 }
-.contact-page .page-container .product-presentation p, .home-page .page-container .product-presentation p, .about-page .page-container .product-presentation p, .providers-page .page-container .product-presentation p, .products-page .page-container .product-presentation p, .not-found .page-container .product-presentation p, .register-page .page-container .product-presentation p, .send-confirmation-page .page-container .product-presentation p {
+.contact-page .page-container .product-presentation p,
+.home-page .page-container .product-presentation p,
+.about-page .page-container .product-presentation p,
+.providers-page .page-container .product-presentation p,
+.products-page .page-container .product-presentation p,
+.not-found .page-container .product-presentation p,
+.register-page .page-container .product-presentation p,
+.send-confirmation-page .page-container .product-presentation p {
   padding: 0.3rem 0;
   margin: 1rem 0;
   font-size: 12px;
   border-top: 4px dotted #151C7E;
   color: rgb(190, 36, 31);
 }
-.contact-page .page-container .product-presentation .boxes-container, .home-page .page-container .product-presentation .boxes-container, .about-page .page-container .product-presentation .boxes-container, .providers-page .page-container .product-presentation .boxes-container, .products-page .page-container .product-presentation .boxes-container, .not-found .page-container .product-presentation .boxes-container, .register-page .page-container .product-presentation .boxes-container, .send-confirmation-page .page-container .product-presentation .boxes-container {
+.contact-page .page-container .product-presentation .boxes-container,
+.home-page .page-container .product-presentation .boxes-container,
+.about-page .page-container .product-presentation .boxes-container,
+.providers-page .page-container .product-presentation .boxes-container,
+.products-page .page-container .product-presentation .boxes-container,
+.not-found .page-container .product-presentation .boxes-container,
+.register-page .page-container .product-presentation .boxes-container,
+.send-confirmation-page .page-container .product-presentation .boxes-container {
   display: flex;
   overflow: hidden;
   overflow-x: scroll;
@@ -187,15 +222,37 @@ header .register-btn {
   border-radius: 1rem;
   padding: 2rem;
 }
-.contact-page .page-container .product-presentation .boxes-container::-webkit-scrollbar, .home-page .page-container .product-presentation .boxes-container::-webkit-scrollbar, .about-page .page-container .product-presentation .boxes-container::-webkit-scrollbar, .providers-page .page-container .product-presentation .boxes-container::-webkit-scrollbar, .products-page .page-container .product-presentation .boxes-container::-webkit-scrollbar, .not-found .page-container .product-presentation .boxes-container::-webkit-scrollbar, .register-page .page-container .product-presentation .boxes-container::-webkit-scrollbar, .send-confirmation-page .page-container .product-presentation .boxes-container::-webkit-scrollbar {
+.contact-page .page-container .product-presentation .boxes-container::-webkit-scrollbar,
+.home-page .page-container .product-presentation .boxes-container::-webkit-scrollbar,
+.about-page .page-container .product-presentation .boxes-container::-webkit-scrollbar,
+.providers-page .page-container .product-presentation .boxes-container::-webkit-scrollbar,
+.products-page .page-container .product-presentation .boxes-container::-webkit-scrollbar,
+.not-found .page-container .product-presentation .boxes-container::-webkit-scrollbar,
+.register-page .page-container .product-presentation .boxes-container::-webkit-scrollbar,
+.send-confirmation-page .page-container .product-presentation .boxes-container::-webkit-scrollbar {
   background-color: transparent;
-  height: 8px;
+  height: 30px !important;
+  border-radius: 4px;
 }
-.contact-page .page-container .product-presentation .boxes-container::-webkit-scrollbar-thumb, .home-page .page-container .product-presentation .boxes-container::-webkit-scrollbar-thumb, .about-page .page-container .product-presentation .boxes-container::-webkit-scrollbar-thumb, .providers-page .page-container .product-presentation .boxes-container::-webkit-scrollbar-thumb, .products-page .page-container .product-presentation .boxes-container::-webkit-scrollbar-thumb, .not-found .page-container .product-presentation .boxes-container::-webkit-scrollbar-thumb, .register-page .page-container .product-presentation .boxes-container::-webkit-scrollbar-thumb, .send-confirmation-page .page-container .product-presentation .boxes-container::-webkit-scrollbar-thumb {
+.contact-page .page-container .product-presentation .boxes-container::-webkit-scrollbar-thumb,
+.home-page .page-container .product-presentation .boxes-container::-webkit-scrollbar-thumb,
+.about-page .page-container .product-presentation .boxes-container::-webkit-scrollbar-thumb,
+.providers-page .page-container .product-presentation .boxes-container::-webkit-scrollbar-thumb,
+.products-page .page-container .product-presentation .boxes-container::-webkit-scrollbar-thumb,
+.not-found .page-container .product-presentation .boxes-container::-webkit-scrollbar-thumb,
+.register-page .page-container .product-presentation .boxes-container::-webkit-scrollbar-thumb,
+.send-confirmation-page .page-container .product-presentation .boxes-container::-webkit-scrollbar-thumb {
   border-radius: 4px;
   background-color: rgb(209, 49, 49);
 }
-.contact-page .page-container .product-presentation .box, .home-page .page-container .product-presentation .box, .about-page .page-container .product-presentation .box, .providers-page .page-container .product-presentation .box, .products-page .page-container .product-presentation .box, .not-found .page-container .product-presentation .box, .register-page .page-container .product-presentation .box, .send-confirmation-page .page-container .product-presentation .box {
+.contact-page .page-container .product-presentation .box,
+.home-page .page-container .product-presentation .box,
+.about-page .page-container .product-presentation .box,
+.providers-page .page-container .product-presentation .box,
+.products-page .page-container .product-presentation .box,
+.not-found .page-container .product-presentation .box,
+.register-page .page-container .product-presentation .box,
+.send-confirmation-page .page-container .product-presentation .box {
   min-width: 1000px;
   margin: 2rem 5%;
   padding: 0rem 0;
@@ -204,22 +261,51 @@ header .register-btn {
   border-radius: 8px;
   align-items: center;
 }
-.contact-page .page-container .product-presentation .box .product, .home-page .page-container .product-presentation .box .product, .about-page .page-container .product-presentation .box .product, .providers-page .page-container .product-presentation .box .product, .products-page .page-container .product-presentation .box .product, .not-found .page-container .product-presentation .box .product, .register-page .page-container .product-presentation .box .product, .send-confirmation-page .page-container .product-presentation .box .product {
-  width: 7rem;
+.contact-page .page-container .product-presentation .box .product,
+.home-page .page-container .product-presentation .box .product,
+.about-page .page-container .product-presentation .box .product,
+.providers-page .page-container .product-presentation .box .product,
+.products-page .page-container .product-presentation .box .product,
+.not-found .page-container .product-presentation .box .product,
+.register-page .page-container .product-presentation .box .product,
+.send-confirmation-page .page-container .product-presentation .box .product {
+  width: 9rem;
   height: 7rem;
-  margin: 0 auto;
+  margin: 0.5rem auto;
+  padding: 0.25rem;
 }
-.contact-page .page-container .product-presentation .box .box-left, .home-page .page-container .product-presentation .box .box-left, .about-page .page-container .product-presentation .box .box-left, .providers-page .page-container .product-presentation .box .box-left, .products-page .page-container .product-presentation .box .box-left, .not-found .page-container .product-presentation .box .box-left, .register-page .page-container .product-presentation .box .box-left, .send-confirmation-page .page-container .product-presentation .box .box-left {
+.contact-page .page-container .product-presentation .box .box-left,
+.home-page .page-container .product-presentation .box .box-left,
+.about-page .page-container .product-presentation .box .box-left,
+.providers-page .page-container .product-presentation .box .box-left,
+.products-page .page-container .product-presentation .box .box-left,
+.not-found .page-container .product-presentation .box .box-left,
+.register-page .page-container .product-presentation .box .box-left,
+.send-confirmation-page .page-container .product-presentation .box .box-left {
   display: flex;
   padding: 1rem;
   flex-basis: 30%;
 }
-.contact-page .page-container .product-presentation .box .box-left .provider, .home-page .page-container .product-presentation .box .box-left .provider, .about-page .page-container .product-presentation .box .box-left .provider, .providers-page .page-container .product-presentation .box .box-left .provider, .products-page .page-container .product-presentation .box .box-left .provider, .not-found .page-container .product-presentation .box .box-left .provider, .register-page .page-container .product-presentation .box .box-left .provider, .send-confirmation-page .page-container .product-presentation .box .box-left .provider {
+.contact-page .page-container .product-presentation .box .box-left .provider,
+.home-page .page-container .product-presentation .box .box-left .provider,
+.about-page .page-container .product-presentation .box .box-left .provider,
+.providers-page .page-container .product-presentation .box .box-left .provider,
+.products-page .page-container .product-presentation .box .box-left .provider,
+.not-found .page-container .product-presentation .box .box-left .provider,
+.register-page .page-container .product-presentation .box .box-left .provider,
+.send-confirmation-page .page-container .product-presentation .box .box-left .provider {
   margin: auto;
-  width: 20rem;
+  width: 15rem;
   border-radius: 4px;
 }
-.contact-page .page-container .product-presentation .box .box-right, .home-page .page-container .product-presentation .box .box-right, .about-page .page-container .product-presentation .box .box-right, .providers-page .page-container .product-presentation .box .box-right, .products-page .page-container .product-presentation .box .box-right, .not-found .page-container .product-presentation .box .box-right, .register-page .page-container .product-presentation .box .box-right, .send-confirmation-page .page-container .product-presentation .box .box-right {
+.contact-page .page-container .product-presentation .box .box-right,
+.home-page .page-container .product-presentation .box .box-right,
+.about-page .page-container .product-presentation .box .box-right,
+.providers-page .page-container .product-presentation .box .box-right,
+.products-page .page-container .product-presentation .box .box-right,
+.not-found .page-container .product-presentation .box .box-right,
+.register-page .page-container .product-presentation .box .box-right,
+.send-confirmation-page .page-container .product-presentation .box .box-right {
   border-radius: 1rem;
   box-shadow: 0px 0px 2px rgba(0, 0, 0, 0.3);
   margin: 2rem;
@@ -367,14 +453,15 @@ header .register-btn {
 }
 .contact-form .location {
   width: 32vw;
-  min-width: 32rem;
+  min-width: 20rem;
   height: 100%;
   border-radius: 0.5rem;
   border: none;
 }
 .contact-form form {
   padding: 2rem 0;
-  min-width: 32rem;
+  min-width: 20rem;
+  min-height: 28rem;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -382,6 +469,19 @@ header .register-btn {
   width: 32vw;
   height: 100%;
   border-radius: 0.5rem;
+}
+.contact-form form .contact-form-box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.contact-form form .sended-message {
+  position: relative;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
 }
 .contact-form form .two-column-input {
   width: 80%;
@@ -395,7 +495,8 @@ header .register-btn {
   color: rgb(12, 30, 92);
   margin: 0.3rem;
 }
-.contact-form form label input, .contact-form form label textarea {
+.contact-form form label input,
+.contact-form form label textarea {
   box-shadow: 0px 0px 2px rgba(0, 0, 0, 0.15);
   resize: none;
   width: 100%;
@@ -421,19 +522,18 @@ header .register-btn {
 }
 
 .about-images {
-  margin: 4rem 0;
+  margin: 3rem 0;
   justify-content: center;
   display: flex;
   flex-wrap: wrap;
 }
 .about-images img {
-  min-width: 16rem;
+  min-width: 30rem;
   border: 4px solid white;
   filter: drop-shadow(4px 4px 3px rgb(228, 228, 228));
-  border-radius: 0.2rem;
+  border-radius: 0.8rem;
   box-shadow: 0px 0px 2px rgba(0, 0, 0, 0.7);
-  margin: 1rem -1rem;
-  transform: rotateZ(3deg);
+  margin: 0rem -1rem;
   width: 20%;
 }
 
@@ -502,14 +602,16 @@ footer {
   width: 100%;
   color: white;
   background: linear-gradient(to right, rgb(42, 80, 184), rgb(5, 35, 88));
-  padding: 3rem 0;
+  padding: 3rem 0.5rem;
+  min-height: 24vh;
   display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
   align-items: flex-end;
   justify-content: space-evenly;
 }
 footer h3 {
-  font-weight: 400;
-  font-size: 12px;
+  font-size: 14px;
   text-align: left;
   font-weight: 600;
 }
@@ -536,7 +638,6 @@ footer ul i {
 .register-page {
   margin: 2rem auto;
   max-width: 80%;
-  height: 70vh;
   margin-top: 5rem;
 }
 .register-page h2 {
@@ -585,7 +686,6 @@ footer ul i {
   border-radius: 2rem;
   display: flex;
   justify-content: center;
-  width: -webkit-fit-content;
   width: -moz-fit-content;
   width: fit-content;
   margin: auto;
@@ -714,7 +814,7 @@ footer ul i {
   font-size: 14px;
 }
 .providers-page .page-container .providers-container .provider-card {
-  margin: 0.5rem;
+  margin: 2rem;
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
@@ -730,4 +830,121 @@ footer ul i {
 .providers-page .page-container .providers-container .provider-card:hover {
   transform: scale(1.1);
   filter: drop-shadow(1rem 1rem 3px rgba(0, 0, 0, 0.1));
+}
+
+.card-slider-container {
+  display: flex;
+  align-items: center;
+}
+.card-slider-container span {
+  cursor: pointer;
+  background-color: red;
+}
+.card-slider-container button {
+  background-color: white;
+  opacity: 0.5;
+  border: none;
+  box-shadow: 1px 1px 4px black;
+  min-width: 3rem;
+  font-size: 1.5rem;
+  font-weight: 700;
+  height: 3rem;
+  border-radius: 50%;
+  transition: 0.1s;
+  color: rgb(5, 35, 88);
+  margin: 0 -1rem;
+}
+.card-slider-container button:hover {
+  opacity: 1;
+}
+
+.card-slider {
+  display: flex;
+  gap: 2rem;
+  align-items: center;
+  padding: 2rem;
+  overflow: hidden;
+  overflow-x: scroll;
+  scroll-behavior: smooth;
+}
+.card-slider::-webkit-scrollbar {
+  display: none;
+}
+.card-slider .provider-slider-card {
+  border-radius: 0.3rem;
+  overflow: hidden;
+  box-shadow: 0.2rem 0.2rem 8px rgba(0, 0, 0, 0.3);
+  min-width: 12rem;
+  max-width: 12rem;
+  height: 16rem;
+}
+.card-slider .provider-slider-card .provider-image-box {
+  padding: 1rem;
+  height: 60%;
+  display: flex;
+  align-items: center;
+}
+.card-slider .provider-slider-card .provider-image-box img {
+  max-width: 80%;
+  margin: auto;
+}
+.card-slider .provider-slider-card .provider-card-info {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 40%;
+  padding: 1rem;
+  background-color: rgb(44, 44, 110);
+}
+.card-slider .provider-slider-card .provider-card-info h4 {
+  font-weight: 600;
+  font-size: 14px;
+  text-align: center;
+  color: white;
+}
+
+.menu-opt {
+  text-decoration: none;
+  color: #151C7E;
+}
+
+@media screen and (max-width: 600px) {
+  .page-container {
+    padding: 1rem !important;
+  }
+  .register-page {
+    height: 90vh;
+  }
+  .logo {
+    margin: 0 0.5rem;
+  }
+  .logo img {
+    max-width: 100%;
+  }
+  .header-top {
+    justify-content: flex-end !important;
+    padding: 0 0.5rem;
+  }
+  .register-btn {
+    top: 3rem !important;
+  }
+  .menu {
+    display: none !important;
+  }
+  .menu-drawer {
+    display: block !important;
+  }
+  .menu-drawer span {
+    font-size: 1.2rem;
+    color: #151C7E;
+  }
+  .ant-drawer-body p {
+    margin: 1.5rem 1rem;
+    font-size: 1rem;
+    font-weight: 500;
+  }
+  .about-images img {
+    min-width: 80%;
+    max-width: 80%;
+  }
 }/*# sourceMappingURL=global.css.map */

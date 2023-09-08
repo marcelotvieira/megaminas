@@ -1,61 +1,88 @@
 /* eslint-disable global-require */
 const providersPrev = [
   {
+    providerName: 'Pernod',
+    providerImage: require('../productImages/pernod10.png'),
+    products: [
+      require('../productImages/products/pernod/absolut 1 Li.png'),
+      require('../productImages/products/pernod/chivas regal 12.png'),
+      require('../productImages/products/pernod/domencq.png'),
+      require('../productImages/products/pernod/gin beefeater.png'),
+      require('../productImages/products/pernod/gin orloff 1 LI.png'),
+      require('../productImages/products/pernod/montila carta crist.png'),
+      require('../productImages/products/pernod/passport 1l.png'),
+      require('../productImages/products/pernod/vodka orloff 1 li  5xdestilada.png'),
+    ],
+  },
+  {
+    providerName: 'Mondelez',
+    providerImage: require('../productImages/mondelez.png'),
+    products: [
+      require('../productImages/products/Mondelez/BBbisLaka.png'),
+      require('../productImages/products/Mondelez/bbLactaGrandesSucessos.png'),
+      require('../productImages/products/Mondelez/poRoyal.png'),
+      require('../productImages/products/Mondelez/dropsTangTaranja.png'),
+      require('../productImages/products/Mondelez/BBbisAoLeite.png'),
+      require('../productImages/products/Mondelez/dropsHallsMenta.png'),
+      require('../productImages/products/Mondelez/dropsFreshAbacaxi.png'),
+      require('../productImages/products/Mondelez/refClightAbacaxi.png'),
+    ],
+  },
+  {
+    providerName: 'Cargil',
+    providerImage: require('../productImages/cargil.png'),
+    products: [
+      require('../productImages/products/cargill/azeite ol borges 500 ml.png'),
+      require('../productImages/products/cargill/catchup elefante pet.png'),
+      require('../productImages/products/cargill/ext tomate 130 gr.png'),
+      require('../productImages/products/cargill/maionese liza.png'),
+      require('../productImages/products/cargill/molho pomarola 300 gr sache.png'),
+      require('../productImages/products/cargill/molho tarantella 300 gr sache.png'),
+      require('../productImages/products/cargill/oleo comp maria  500 ml.png'),
+      require('../productImages/products/cargill/oleo soja liza  900ml  pet.png'),
+    ],
+  },
+  {
     providerName: 'Nestle',
-    providerImage: 'https://i.pinimg.com/originals/35/c8/d7/35c8d72af2fb1c2813e8d5b753a01624.png',
+    providerImage: require('../productImages/nestle.png'),
     products: [
-      'https://cdnv2.moovin.com.br/armazemdomercado/imagens/produtos/det/novo-ninho-mix-forti-nestle-380g-e789c04b7680c30b79f44050cd872b3b.png',
-      'https://www.nestle-cereals.com/br/sites/g/files/fawtmp376/files/styles/scale_992/public/d7/nescau_duo_270g_1.png?itok=Sf3B6eLZ',
-      'https://images-americanas.b2w.io/spacey/acom/2022/05/23/veja-mais-produtos-nestle-269f48a8476a.png',
-      'https://img.drogaraia.com.br/catalog/product/c/e/cereal-infantil-nestle-mucilon-multicereais-sache-403360-1.png?width=450&height=450&quality=85&type=resize',
-      'https://www.jauserve.com.br/dw/image/v2/BFJL_PRD/on/demandware.static/-/Sites-jauserve-master/default/dw9843d523/7891000325131.png?sw=360&sfrm=png&sm=fit&q=80',
-      'https://www.nestle-cereals.com/br/sites/g/files/fawtmp376/files/styles/scale_992/public/d7/os19798_mockup_digital_nescau_granola_250g_at_1.png?itok=4GnrviZu',
-      'https://us-southeast-1.linodeobjects.com/storage/serraverdehortifruti/media/uploads/produto/ninho_3_sabores_540g_601ba63e-fc40-4a00-b6f9-b47e86c1d7b0.png',
-      'https://img.drogasil.com.br/wysiwyg/LP_nestle_juntos/nanlac-comfor.png',
+      require('../productImages/products/Nestle/chokito.png'),
+      require('../productImages/products/Nestle/achoc nescau 2.0.png'),
+      require('../productImages/products/Nestle/serenata de amor.png'),
+      require('../productImages/products/Nestle/pretigio.png'),
+      require('../productImages/products/Nestle/leite moca.png'),
+      require('../productImages/products/Nestle/leite po ninho.png'),
+      require('../productImages/products/Nestle/especialidades.png'),
+      require('../productImages/products/Nestle/leite po ninho comp lacteo.png'),
     ],
   },
   {
-    providerName: 'nestle',
-    providerImage: 'https://helsinkifashionweeklive.com/wp-content/plugins/superlogoshowcase-wp/images/default.png',
+    providerName: 'Pepsico',
+    providerImage: require('../productImages/pepsico.png'),
     products: [
-      'https://helsinkifashionweeklive.com/wp-content/plugins/superlogoshowcase-wp/images/default.png',
-      'https://helsinkifashionweeklive.com/wp-content/plugins/superlogoshowcase-wp/images/default.png',
-      'https://helsinkifashionweeklive.com/wp-content/plugins/superlogoshowcase-wp/images/default.png',
-      'https://helsinkifashionweeklive.com/wp-content/plugins/superlogoshowcase-wp/images/default.png',
-      'https://helsinkifashionweeklive.com/wp-content/plugins/superlogoshowcase-wp/images/default.png',
-      'https://helsinkifashionweeklive.com/wp-content/plugins/superlogoshowcase-wp/images/default.png',
-      'https://helsinkifashionweeklive.com/wp-content/plugins/superlogoshowcase-wp/images/default.png',
-      'https://helsinkifashionweeklive.com/wp-content/plugins/superlogoshowcase-wp/images/default.png',
+      require('../productImages/products/pepsico/aveia quaker.png'),
+      require('../productImages/products/pepsico/kero coco 1 L.png'),
+      require('../productImages/products/pepsico/salgadinho churrasco.png'),
+      require('../productImages/products/pepsico/toddy 200ml levinho.png'),
+      require('../productImages/products/pepsico/toddy 200ml trad.png'),
+      require('../productImages/products/pepsico/toddy 380 gr light.png'),
+      require('../productImages/products/pepsico/salgadinho pao de alho.png'),
+      require('../productImages/products/pepsico/toddy 370 gr.png'),
 
     ],
   },
   {
-    providerName: 'nestle',
-    providerImage: 'https://helsinkifashionweeklive.com/wp-content/plugins/superlogoshowcase-wp/images/default.png',
+    providerName: 'Bombril',
+    providerImage: require('../productImages/bombril.png'),
     products: [
-      'https://helsinkifashionweeklive.com/wp-content/plugins/superlogoshowcase-wp/images/default.png',
-      'https://helsinkifashionweeklive.com/wp-content/plugins/superlogoshowcase-wp/images/default.png',
-      'https://helsinkifashionweeklive.com/wp-content/plugins/superlogoshowcase-wp/images/default.png',
-      'https://helsinkifashionweeklive.com/wp-content/plugins/superlogoshowcase-wp/images/default.png',
-      'https://helsinkifashionweeklive.com/wp-content/plugins/superlogoshowcase-wp/images/default.png',
-      'https://helsinkifashionweeklive.com/wp-content/plugins/superlogoshowcase-wp/images/default.png',
-      'https://helsinkifashionweeklive.com/wp-content/plugins/superlogoshowcase-wp/images/default.png',
-      'https://helsinkifashionweeklive.com/wp-content/plugins/superlogoshowcase-wp/images/default.png',
-
-    ],
-  },
-  {
-    providerName: 'nestle',
-    providerImage: 'https://helsinkifashionweeklive.com/wp-content/plugins/superlogoshowcase-wp/images/default.png',
-    products: [
-      'https://helsinkifashionweeklive.com/wp-content/plugins/superlogoshowcase-wp/images/default.png',
-      'https://helsinkifashionweeklive.com/wp-content/plugins/superlogoshowcase-wp/images/default.png',
-      'https://helsinkifashionweeklive.com/wp-content/plugins/superlogoshowcase-wp/images/default.png',
-      'https://helsinkifashionweeklive.com/wp-content/plugins/superlogoshowcase-wp/images/default.png',
-      'https://helsinkifashionweeklive.com/wp-content/plugins/superlogoshowcase-wp/images/default.png',
-      'https://helsinkifashionweeklive.com/wp-content/plugins/superlogoshowcase-wp/images/default.png',
-      'https://helsinkifashionweeklive.com/wp-content/plugins/superlogoshowcase-wp/images/default.png',
-      'https://helsinkifashionweeklive.com/wp-content/plugins/superlogoshowcase-wp/images/default.png',
+      require('../productImages/products/bombril/det liq limpol.png'),
+      require('../productImages/products/bombril/la de aco.png'),
+      require('../productImages/products/bombril/mon bijou laranja.png'),
+      require('../productImages/products/bombril/mon bijou.png'),
+      require('../productImages/products/bombril/pinho brill.png'),
+      require('../productImages/products/bombril/sapolio radium crem cloro.png'),
+      require('../productImages/products/bombril/sapolio radium crem lavanda.png'),
+      require('../productImages/products/bombril/sapolio radium po cloro.png'),
     ],
   },
 ];
@@ -352,72 +379,72 @@ const providers = [
   },
   {
     image: require('../images/sunguider.png'),
-    title: 'Sunguider',
+    title: 'Sun Guider Inc',
     description: 'A short description',
   },
 ];
 
-const categorys = [
-  {
-    name: 'laticícios',
-    thumbnail: 'http://www.domilac.com.br/_nuxt/img/e65ff90.png',
-    sourceCatalog: 'teste.pdf',
-  },
-  {
-    name: 'laticícios',
-    thumbnail: 'http://www.domilac.com.br/_nuxt/img/e65ff90.png',
-    sourceCatalog: 'teste.pdf',
-  },
-  {
-    name: 'laticícios',
-    thumbnail: 'http://www.domilac.com.br/_nuxt/img/e65ff90.png',
-    sourceCatalog: 'teste.pdf',
-  },
-  {
-    name: 'laticícios',
-    thumbnail: 'http://www.domilac.com.br/_nuxt/img/e65ff90.png',
-    sourceCatalog: 'teste.pdf',
-  },
-  {
-    name: 'laticícios',
-    thumbnail: 'http://www.domilac.com.br/_nuxt/img/e65ff90.png',
-    sourceCatalog: 'teste.pdf',
-  },
-  {
-    name: 'laticícios',
-    thumbnail: 'http://www.domilac.com.br/_nuxt/img/e65ff90.png',
-    sourceCatalog: 'teste.pdf',
-  },
-  {
-    name: 'laticícios',
-    thumbnail: 'http://www.domilac.com.br/_nuxt/img/e65ff90.png',
-    sourceCatalog: 'teste.pdf',
-  },
-  {
-    name: 'laticícios',
-    thumbnail: 'http://www.domilac.com.br/_nuxt/img/e65ff90.png',
-    sourceCatalog: 'teste.pdf',
-  },
-  {
-    name: 'laticícios',
-    thumbnail: 'http://www.domilac.com.br/_nuxt/img/e65ff90.png',
-    sourceCatalog: 'teste.pdf',
-  },
-  {
-    name: 'laticícios',
-    thumbnail: 'http://www.domilac.com.br/_nuxt/img/e65ff90.png',
-    sourceCatalog: 'teste.pdf',
-  },
-  {
-    name: 'laticícios',
-    thumbnail: 'http://www.domilac.com.br/_nuxt/img/e65ff90.png',
-    sourceCatalog: 'teste.pdf',
-  },
-  {
-    name: 'laticícios',
-    thumbnail: 'http://www.domilac.com.br/_nuxt/img/e65ff90.png',
-    sourceCatalog: 'teste.pdf',
-  },
-];
+// const categorys = [
+//   {
+//     name: 'laticícios',
+//     thumbnail: 'http://www.domilac.com.br/_nuxt/img/e65ff90.png',
+//     sourceCatalog: 'teste.pdf',
+//   },
+//   {
+//     name: 'laticícios',
+//     thumbnail: 'http://www.domilac.com.br/_nuxt/img/e65ff90.png',
+//     sourceCatalog: 'teste.pdf',
+//   },
+//   {
+//     name: 'laticícios',
+//     thumbnail: 'http://www.domilac.com.br/_nuxt/img/e65ff90.png',
+//     sourceCatalog: 'teste.pdf',
+//   },
+//   {
+//     name: 'laticícios',
+//     thumbnail: 'http://www.domilac.com.br/_nuxt/img/e65ff90.png',
+//     sourceCatalog: 'teste.pdf',
+//   },
+//   {
+//     name: 'laticícios',
+//     thumbnail: 'http://www.domilac.com.br/_nuxt/img/e65ff90.png',
+//     sourceCatalog: 'teste.pdf',
+//   },
+//   {
+//     name: 'laticícios',
+//     thumbnail: 'http://www.domilac.com.br/_nuxt/img/e65ff90.png',
+//     sourceCatalog: 'teste.pdf',
+//   },
+//   {
+//     name: 'laticícios',
+//     thumbnail: 'http://www.domilac.com.br/_nuxt/img/e65ff90.png',
+//     sourceCatalog: 'teste.pdf',
+//   },
+//   {
+//     name: 'laticícios',
+//     thumbnail: 'http://www.domilac.com.br/_nuxt/img/e65ff90.png',
+//     sourceCatalog: 'teste.pdf',
+//   },
+//   {
+//     name: 'laticícios',
+//     thumbnail: 'http://www.domilac.com.br/_nuxt/img/e65ff90.png',
+//     sourceCatalog: 'teste.pdf',
+//   },
+//   {
+//     name: 'laticícios',
+//     thumbnail: 'http://www.domilac.com.br/_nuxt/img/e65ff90.png',
+//     sourceCatalog: 'teste.pdf',
+//   },
+//   {
+//     name: 'laticícios',
+//     thumbnail: 'http://www.domilac.com.br/_nuxt/img/e65ff90.png',
+//     sourceCatalog: 'teste.pdf',
+//   },
+//   {
+//     name: 'laticícios',
+//     thumbnail: 'http://www.domilac.com.br/_nuxt/img/e65ff90.png',
+//     sourceCatalog: 'teste.pdf',
+//   },
+// ];
 
-export { providers, providersPrev, categorys };
+export { providers, providersPrev };
